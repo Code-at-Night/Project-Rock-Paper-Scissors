@@ -24,9 +24,33 @@
                 if(choice1 === "rock") {
                     if(choice2 === "scissors") {
                         alert("rock wins");
-                    } else 
+                    } else {
+                        alert("paper wins");
+                    }
+                }
+                if(choice1 === "paper") {
+                    if(choice2 === "rock") {
+                        alert("paper wins");
+                    } else {
+                        if(choice2 === "scissors") {
+                            alert("scissors wins");
+                        }
+                    }
+                if(choice1 === "scissors") {
+                    if(choice2 === "rock") {
+                        alert("rock wins");
+                    } else {
+                        if(choice2 ==="paper") {
+                            alert("scissors wins");
+                        }
+                    }
                 }
                 }
+                }
+                console.log("User Choice: " + userChoice);
+                console.log("Computer choice: " + computerChoice);
+                compare(userChoice, computerChoice)
+            }
         </script>
     </body>
 </html>
